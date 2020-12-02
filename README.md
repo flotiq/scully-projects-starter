@@ -7,7 +7,7 @@ Scully Starter - Projects
 
 This is a [Scully](https://scully.io/) starter project for a projects website. It's configured to pull projects data from [Flotiq](https://flotiq.com) and can be easily deployed to your cloud hosting - Heroku, Netlify, etc.
 
-Live Demo: https://vibrant-mclean-8da635.netlify.app/
+Live Demo: https://angry-brattain-f446a1.netlify.app/
 
 Screenshot
 

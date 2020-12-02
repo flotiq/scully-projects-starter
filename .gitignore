@@ -41,7 +41,7 @@ yarn-error.log
 testem.log
 /typings
 scully.log
-/assests/scully-routes.json
+/assets/scully-routes.json
 /.scully
 
 # System Files
