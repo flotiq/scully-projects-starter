@@ -1,0 +1,14 @@
+<article *ngIf="project"
+  class="post-content" [ngClass]="{'no-image': !project.gallery || !project.gallery[0]}"
+>
+  <header class="post-content-header">
+    <h1 class="post-content-title">{{ project.name }}</h1>
+  </header>
+  <div [innerHTML]="project.description" class="post-content-body"></div>
+
+
+  <div class="post-content-image" *ngFor="let image of project.gallery">
+    <img src="https://api.flotiq.com/image/1920x0/{{image.id}}.{{image.extension}}" alt={{project.name}}/>
+  </div>
+</article>
+

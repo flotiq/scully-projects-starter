@@ -1,0 +1,86 @@
+<div class="site-wrapper {{toggleNav ? 'site-head-open' : ''}}">
+  <header class="site-head">
+    <div class="site-head-container">
+      <a
+        class="nav-burger"
+        href="#"
+        (click)="setToggleNav()"
+      >
+        <div
+          class="hamburger hamburger--collapse"
+          aria-label="Menu"
+          role="button"
+          aria-controls="navigation"
+        >
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </a>
+      <nav id="swup" class="site-head-left">
+        <ul class="nav" role="menu">
+          <li class="nav-home nav-current" role="menuitem">
+            <a href="/">Home</a>
+          </li>
+          <li class="nav-about" role="menuitem">
+            <a href="/about">About</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="site-head-center">
+        <a class="site-head-logo" href="/" >
+          {{title}}
+        </a>
+      </div>
+      <div class="site-head-right">
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/Flotiq-104200727751200/"
+            title="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook
+          </a>
+          <a
+            href="https://twitter.com/flotiq"
+            title="Twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="site-main" class="site-main">
+    <div id="swup" class="transition-fade">
+      <header class="page-head" *ngIf="isHome">
+        <h2 class="page-head-title">
+          A bold, minimal theme for your projects, focused on clean typography & beautiful imagery
+        </h2>
+      </header>
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+  <footer class="site-foot">
+    &copy; {{date}} <a href="/">{{title}}</a> &mdash;
+    Built with
+    <a
+      href="https://scully.io"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Scully
+    </a>
+    &
+    <a
+      href="https://flotiq.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Flotiq
+    </a>
+  </footer>
+</div>

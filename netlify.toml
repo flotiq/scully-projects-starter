@@ -1,0 +1,5 @@
+[build]
+  command = "bash ./build.sh && ng build --prod && npm run scully -- --scanRoutes"
+  publish = "dist/static"
+[template.environment]
+  YOUR_FLOTIQ_API_KEY="YOUR FLOTIQ API KEY"
