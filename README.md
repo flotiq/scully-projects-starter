@@ -35,7 +35,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     
     The next step is to configure our application to know from where it has to fetch the data.
     
-    In `src/environments/environment.prod.ts` and in `src/environments/environment.js` change `YOUR_FLOTIQ_API_KEY` to Read only Flotiq API key.
+    In `src/environments/environment.prod.ts`, in `src/environments/environment.ts` and in `src/environments/environment.js` change `YOUR_FLOTIQ_API_KEY` to Read only Flotiq API key.
     
     Remember to change them back to `YOUR_FLOTIQ_API_KEY` before committing code to repository.
     
@@ -53,13 +53,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     
     It will add 9 images and 3 projects to your Flotiq account.
         
-    _Note: You need to put your Read and write API key in `src/environments/environment.js` for import to work. You don't need Project content type in your account. If you already have projects with ids `project-1`, `project-2` they will be overwritten._
+    _Note: You need to put your Read and write API key as the `flotiqApiKey` for import to work. You don't need the `Project` content type in your account. If you already have projects with ids `project-1`, `project-2` they will be overwritten._
 
-    Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+    Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+        
+    If you wish to add new elements to the project run `npm run ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-    If you wish to add new elements to the project run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-    Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+    Run `npm run build:prod` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
     
     To build the static version with Scully run:
     
