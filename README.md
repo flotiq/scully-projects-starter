@@ -77,13 +77,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     
     ![Managing projects using Flotiq](docs/manage-projects.png)
 
-### Running unit tests
+1. **Update Flotiq Angular SDK when you create or update Type Definition**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-### Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+    Everytime you change something in your Content Type Definitions, you have to regenerate Flotiq Angular Package inside project.
+    1. Go to your dashboard in Flotiq, and click on Angular icon in "Your API packages" section, to download an SDK with the updated content of your schema.
+    ![Downloading Angular SDK](docs/Dashboard-package.png)
+    2. Extract downloaded zip in `flotiq` directory in the project.
+    3. Done, you have updated Flotiq Angular SDK in your project!
 
 ### Further help with Angular
 
